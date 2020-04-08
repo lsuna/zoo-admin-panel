@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zoo Admin 2020</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/2ff7d91277.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <!--------- Sidebar ------------>
+
+    <div class="header secondaryColor">
+        <a href="index.html">
+            <h1 class="secondaryTextColor" id="adminHeader"><i class="fas fa-paw"></i> Zoo Admin 2020</h1>
+        </a>
+    </div>
+
+    <!-- The sidebar -->
+    <div class="sidebar secondaryLightColor">
+        <a class="active" href="index.html"><i class="fas fa-paw"></i> Home</a>
+        <a href="gates.html"><i class="fas fa-lock"></i> Gate System</a>
+        <a href="feeder.html"><i class="fas fa-utensils"></i> Feeder System</a>
+        <a href="sprinkler.html"><i class="fas fa-tint"></i> Sprinkler System</a>
+    </div>
+
+
+
+    <div class="main-content">
+
+        <div class="home-container">
+            <div class="rectangle primaryColor">
+                <h1 class="text-center topText">Hello Ellie!</h1>
+            </div>
+            <div class="card profileCard">
+                <img src="/img/ellie.png" alt="Avatar" style="width:100%">
+                <br>
+                <div class="card-container" id="Profilecard">
+                    <h3 class="text-center"><b>Ellie Fredrickson</b></h3>
+                    <p class="text-center title">Zoo Keeper</p>
+                    <hr>
+                    <i class="fas fa-envelope fa-lg profileIcon"></i>
+                    <i class="fas fa-calendar-day fa-lg profileIcon"></i>
+                    <i class="fas fa-cloud-sun fa-lg profileIcon"></i>
+                </div>
+                <br>
+
+            </div>
+            <div class="rightCol">
+                <div class="calander secondaryTextColor primaryColor">
+                    <h2 class="secondaryTextColor primaryColor" id="date">March 24, 2020</h2>
+                    
+                </div>
+               
+                <div class="weather secondaryColor secondaryTextColor">
+                    <h3><i class="fas fa-cloud-sun fa-2x"></i>&nbsp; 54 &deg; Partly Sunny</h3>
+                    
+                </div>
+            </div>
+            
+            <div class="todoForm primaryColor">
+                <h1 class="text-center secondaryTextColor">Reminders</h1>
+                
+                <form class="formField">
+                    <br>
+                    <input type="checkbox" name="vehicle1" value="Bike">
+                    <label for="vehicle1">&nbsp; Lock panda gate</label><br>
+                    <input type="checkbox" name="vehicle3" value="Boat">
+                    <label for="vehicle4">&nbsp; Feed penguins</label><br>
+                    <input type="checkbox" name="vehicle5" value="Boat">
+                    <label for="vehicle6">&nbsp; Turn on all sprinklers</label><br>
+                    <input type="checkbox" name="vehicle5" value="task6">
+                    <label for="vehicle5">&nbsp; Set Forest Sprinkler Schedule</label><br><br>
+
+                </form>
+            </div>
+
+            <!--
+            <a href="gates.html" class="lgBtn">
+                <span><i class="fas fa-lock fa-7x"></i></span>
+            </a>
+            <a href="feeder.html" class="lgBtn">
+                <span><i class="fas fa-utensils fa-7x"></i></span>
+            </a>
+            <a href="sprinkler.html" class="lgBtn">
+                <span><i class="fas fa-tint fa-7x"></i></span>
+            </a>
+-->
+        </div>
+
+    </div>
+
+
+    <script src="date.js"></script>
+
+</body>
+
+</html>

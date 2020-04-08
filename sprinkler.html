@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zoo Admin 2020</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/2ff7d91277.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <!--------- Sidebar ------------>
+
+    <div class="header secondaryColor">
+        <a href="index.html"><h1 class="secondaryTextColor" id="adminHeader"><i class="fas fa-paw"></i> Zoo Admin 2020</h1></a>
+        
+    </div>
+
+    <div class="sidebar secondaryLightColor">
+        <a href="index.html"><i class="fas fa-paw"></i> Home</a>
+        <a href="gates.html"><i class="fas fa-lock"></i> Gate System</a>
+        <a href="feeder.html"><i class="fas fa-utensils"></i> Feeder System</a>
+        <a class="active" href="sprinkler.html"><i class="fas fa-tint"></i> Sprinkler System</a>
+    </div>
+
+
+    <div class="main-content">
+
+        <div class="container">
+
+            <div class="cardrow">
+                <div class="rectangle primaryColor">
+                    <h1 class="text-center topText">Sprinkler System</h1>
+                </div>
+                <div class="card">
+                    <img src="/img/desert.png" alt="Avatar" style="width:100%">
+                     <div class="circle">
+                        <span class="fas fa-tint sprinkler-icon" id="firstSprinkler"></span>
+                    </div>
+
+                    <div class="card-container">
+                        <h3 class="text-center cardCorrection"><b>Desert Zone</b></h3>
+                        <p><button class="sprinklerBtn" data-that="firstSprinkler">On</button></p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/forest.png" alt="Avatar" style="width:100%">
+                     <div class="circle">
+                        <span class="fas fa-tint sprinkler-icon" id="secondSprinkler"></span>
+                    </div>
+
+                    <div class="card-container">
+                        <h3 class="text-center cardCorrection"><b>Forest Zone</b></h3>
+                        <p><button class="sprinklerBtn" data-that="secondSprinkler">On</button></p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/savanna.png" alt="Avatar" style="width:100%">
+                     <div class="circle">
+                        <span class="fas fa-tint sprinkler-icon" id="thirdSprinkler"></span>
+                    </div>
+
+                    <div class="card-container">
+                        <h3 class="text-center cardCorrection"><b>Savanna Zone</b></h3>
+                        <p><button class="sprinklerBtn" data-that="thirdSprinkler">On</button></p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="btnRow">
+                <button class="master-sprinkler-button" style="vertical-align:middle">All On</button>
+                <button class="timeBtn" id="modalBtn" style="vertical-align:middle">Scheduler</button>
+            </div>
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header secondaryDarkColor">
+                        <span class="close">&times;</span>
+                        <h1 class="text-center">Sprinkler Scheduler</h1>
+                    </div>
+                    <div class="modal-body">
+                        <h3 class="text-center secondaryTextColor scheduleText">Desert Zone Sprinkler</h3>
+                        <div class="form-container">
+                            <form>
+                                <select class="selectBtn" id="startHour" name="startHour">
+                                <option value="1">12:00</option>
+                                <option value="2">1:00</option>
+                                <option value="3">2:00</option>
+                                <option value="4">3:00</option>
+                                <option value="5">4:00</option>
+                                <option value="6">5:00</option>
+                                <option value="7">6:00</option>
+                                <option value="8">7:00</option>
+                                <option value="9">8:00</option>
+                                <option value="10">9:00</option>
+                                <option value="11">10:00</option>
+                                <option value="12">11:00</option>
+                              </select>
+                                <select id="startAP" name="startAP">
+                                <option value="1">AM</option>
+                                <option value="2">PM</option>
+                            </select>
+                                <label for="Hours2">:</label>
+                                <select id="endHour" name="endHour">
+                                <option value="1">12:00</option>
+                                <option value="2">1:00</option>
+                                <option value="3">2:00</option>
+                                <option value="4">3:00</option>
+                                <option value="5">4:00</option>
+                                <option value="6">5:00</option>
+                                <option value="7">6:00</option>
+                                <option value="8">7:00</option>
+                                <option value="9">8:00</option>
+                                <option value="10">9:00</option>
+                                <option value="11">10:00</option>
+                                <option value="12">11:00</option>
+                              </select>
+                                <select id="endAP" name="endAP">
+                                <option value="1">AM</option>
+                                <option value="2">PM</option>
+                            </select>
+                                <input class="scheduleBtn" type="submit" value="Schedule">
+                            </form>
+                        </div>
+
+
+
+                        <!--
+                        <div class="slider-container">
+                            <input class="center" type="range" min="0" max="100" value="50" id="slider">
+                            <div id="selector">
+                                <div class="SelectBtn"></div>
+                                <div id="SelectValue"></div>
+                            </div>
+                            <div id="ProgressBar"></div>
+                        </div>
+-->
+
+                        <h3 class="text-center secondaryTextColor scheduleText">Forest Zone Sprinkler</h3>
+                        <div class="form-container">
+                            <form>
+                                <select id="startHour" name="startHour">
+                                <option value="1">12:00</option>
+                                <option value="2">1:00</option>
+                                <option value="3">2:00</option>
+                                <option value="4">3:00</option>
+                                <option value="5">4:00</option>
+                                <option value="6">5:00</option>
+                                <option value="7">6:00</option>
+                                <option value="8">7:00</option>
+                                <option value="9">8:00</option>
+                                <option value="10">9:00</option>
+                                <option value="11">10:00</option>
+                                <option value="12">11:00</option>
+                              </select>
+                                <select id="startAP" name="startAP">
+                                <option value="1">AM</option>
+                                <option value="2">PM</option>
+                            </select>
+                                <label for="Hours2">:</label>
+                                <select id="endHour" name="endHour">
+                                <option value="1">12:00</option>
+                                <option value="2">1:00</option>
+                                <option value="3">2:00</option>
+                                <option value="4">3:00</option>
+                                <option value="5">4:00</option>
+                                <option value="6">5:00</option>
+                                <option value="7">6:00</option>
+                                <option value="8">7:00</option>
+                                <option value="9">8:00</option>
+                                <option value="10">9:00</option>
+                                <option value="11">10:00</option>
+                                <option value="12">11:00</option>
+                              </select>
+                                <select id="endAP" name="endAP">
+                                <option value="1">AM</option>
+                                <option value="2">PM</option>
+                            </select>
+                                <input class="scheduleBtn" type="submit" value="Schedule">
+                            </form>
+                        </div>
+
+                        <h3 class="text-center secondaryTextColor scheduleText">Grassland Zone Sprinkler</h3>
+                        <div class="form-container">
+                            <form>
+                                <select id="startHour" name="startHour">
+                                <option value="1">12:00</option>
+                                <option value="2">1:00</option>
+                                <option value="3">2:00</option>
+                                <option value="4">3:00</option>
+                                <option value="5">4:00</option>
+                                <option value="6">5:00</option>
+                                <option value="7">6:00</option>
+                                <option value="8">7:00</option>
+                                <option value="9">8:00</option>
+                                <option value="10">9:00</option>
+                                <option value="11">10:00</option>
+                                <option value="12">11:00</option>
+                              </select>
+                                <select id="startAP" name="startAP">
+                                <option value="1">AM</option>
+                                <option value="2">PM</option>
+                            </select>
+                                <label for="Hours2">:</label>
+                                <select id="endHour" name="endHour">
+                                <option value="1">12:00</option>
+                                <option value="2">1:00</option>
+                                <option value="3">2:00</option>
+                                <option value="4">3:00</option>
+                                <option value="5">4:00</option>
+                                <option value="6">5:00</option>
+                                <option value="7">6:00</option>
+                                <option value="8">7:00</option>
+                                <option value="9">8:00</option>
+                                <option value="10">9:00</option>
+                                <option value="11">10:00</option>
+                                <option value="12">11:00</option>
+                              </select>
+                                <select id="endAP" name="endAP">
+                                <option value="1">AM</option>
+                                <option value="2">PM</option>
+                            </select>
+                                <input class="scheduleBtn " type="submit" value="Schedule">
+                            </form>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

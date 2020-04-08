@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zoo Admin 2020</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/2ff7d91277.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <!--------- Sidebar ------------>
+
+    <div class="header secondaryColor">
+        <a href="index.html">
+            <h1 class="secondaryTextColor" id="adminHeader"><i class="fas fa-paw"></i> Zoo Admin 2020</h1>
+        </a>
+
+    </div>
+
+    <div class="sidebar secondaryLightColor">
+        <a href="index.html"><i class="fas fa-paw"></i> Home</a>
+        <a class="active" href="gates.html"><i class="fas fa-lock"></i> Gate System</a>
+        <a href="feeder.html"><i class="fas fa-utensils"></i> Feeder System</a>
+        <a href="sprinkler.html"><i class="fas fa-tint"></i> Sprinkler System</a>
+    </div>
+
+
+    <div class="main-content">
+
+        <div class="container">
+
+            <div class="cardrow">
+                <div class="rectangle primaryColor">
+                    <h1 class="text-center topText">Gate Lock System</h1>
+                </div>
+                <div class="card">
+                    <img src="/img/artic.png" alt="Avatar" style="width:100%">
+                    <div class="circle">
+                        <span class="lock-circle"></span>
+                        <span class="fa fa-lock-open status-icon" id="firstlock"></span>
+                    </div>
+
+                    <div class="card-container" id="firstcard">
+                        <h3 class="text-center cardCorrection"><b>Penguin Gate</b></h3>
+                        <p><button class="gateBtn" data-which="firstlock">Lock</button></p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/panda.png" alt="Avatar" style="width:100%">
+                    <div class="circle">
+                        <span class="lock-circle"></span>
+                        <span class="fa fa-lock-open status-icon" id="secondlock"></span>
+                    </div>
+                    <div class="card-container" id="secondcard">
+                        <h3 class="text-center cardCorrection"><b>Panda Gate</b></h3>
+                        <p><button class="gateBtn" data-which="secondlock">Lock</button></p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/sloth.png" alt="Avatar" style="width:100%">
+                    
+                    <div class="circle">
+<!--                        <span class="lock-circle"></span>-->
+                        <span class="fa fa-lock-open status-icon" id="thirdlock"></span>
+                    </div>
+
+                    <div class="card-container" id="thirdcard">
+                        <h3 class="text-center cardCorrection"><b>Sloth Gate</b></h3>
+                        <p><button class="gateBtn" data-which="thirdlock">Lock</button></p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <button class="master-gate-button" style="vertical-align:middle">Lock All</button>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

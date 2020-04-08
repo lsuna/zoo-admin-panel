@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zoo Admin 2020</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/2ff7d91277.js" crossorigin="anonymous"></script>
+<!--    <script src="script.js"></script>-->
+    <script src="feeder.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <!--------- Sidebar ------------>
+
+    <div class="header secondaryColor">
+        <a href="index.html"><h1 class="secondaryTextColor" id="adminHeader"><i class="fas fa-paw"></i> Zoo Admin 2020</h1></a>
+        
+    </div>
+
+    <div class="sidebar secondaryLightColor">
+        <a href="index.html"><i class="fas fa-paw"></i> Home</a>
+        <a href="gates.html"><i class="fas fa-lock"></i> Gate System</a>
+        <a class="active" href="feeder.html"><i class="fas fa-utensils"></i> Feeder System</a>
+        <a href="sprinkler.html"><i class="fas fa-tint"></i> Sprinkler System</a>
+    </div>
+
+
+    <div class="main-content">
+
+        <div class="container">
+
+            <div class="cardrow">
+                <div class="rectangle primaryColor">
+                    <h1 class="text-center topText">Feeder System</h1>
+                </div>
+
+                <div class="card">
+                    <div class="alertWarning" id="penguinNotHungry">
+                        <strong>Warning!</strong> The Penguins are not hungry yet.
+                    </div>
+                    <div class="alertSuccess" id="penguinFed">
+                        <strong>Success!</strong> The Penguins are fed.
+                    </div>
+                     <div class="alertDanger" id="penguinHungry">
+                        <strong>Danger!</strong> The Penguins are hungry.
+                    </div>
+                    <img src="/img/artic.png" alt="Avatar" style="width:100%">
+                    <!--
+                    <span class="lock-circle"></span>
+                    <span class="fa fa-lock-open lock-icon" id="firstlock"></span>
+-->
+                    <div class="card-container" id="firstcard">
+                        <h3 class="text-center"><b>Penguin Zone</b></h3>
+                        <p><button class="feederBtn" id="penguinBtn" data-animal="penguin">Feed</button></p>
+                        <!-- Rounded switch -->
+                        <div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="alertWarning" id="pandaNotHungry">
+                        <strong>Warning!</strong> The Pandas are not hungry yet.
+                    </div>
+                    <div class="alertSuccess" id="pandaFed">
+                        <strong>Success!</strong> The Pandas are fed.
+                    </div>
+                     <div class="alertDanger" id="pandaHungry">
+                        <strong>Danger!</strong> The Pandas are hungry.
+                    </div>
+                    <img src="/img/panda.png" alt="Avatar" style="width:100%">
+                    <!--
+                    <span class="lock-circle"></span>
+                    <span class="fa fa-lock-open lock-icon" id="secondlock"></span>
+-->
+                    <div class="card-container" id="secondcard">
+                        <h3 class="text-center"><b>Panda Zone</b></h3>
+                        <p><button class="feederBtn" id="pandaBtn" data-animal="panda">Feed</button></p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="alertWarning" id="slothNotHungry">
+                        <strong>Warning!</strong> The Sloths are not hungry yet.
+                    </div>
+                    <div class="alertSuccess" id="slothFed">
+                        <strong>Success!</strong> The Sloth are fed.
+                    </div>
+                     <div class="alertDanger" id="slothHungry">
+                        <strong>Danger!</strong> The Sloths are hungry.
+                    </div>
+                    <img src="/img/sloth.png" alt="Avatar" style="width:100%">
+                    <!--
+                    <span class="lock-circle"></span>
+                    <span class="fa fa-lock-open lock-icon" id="thirdlock"></span>
+-->
+                    <div class="card-container" id="thirdcard">
+                        <h3 class="text-center"><b>Sloth Zone</b></h3>
+                        <p><button class="feederBtn" id="slothBtn" data-animal="sloth">Feed</button></p>
+                    </div>
+                </div>
+
+
+            </div>
+
+<!--            <button class="master-feeder-button" style="vertical-align:middle">Feed All</button>-->
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
